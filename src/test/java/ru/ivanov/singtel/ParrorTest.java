@@ -1,6 +1,10 @@
 package ru.ivanov.singtel;
 
 import org.junit.Test;
+import ru.ivanov.singtel.birds.Bird;
+import ru.ivanov.singtel.birds.Chicken;
+import ru.ivanov.singtel.birds.Duck;
+import ru.ivanov.singtel.birds.ParrotFactory;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,4 +1,4 @@
-package ru.ivanov.singtel;
+package ru.ivanov.singtel.birds;
 
 import ru.ivanov.singtel.action.SayAction;
 

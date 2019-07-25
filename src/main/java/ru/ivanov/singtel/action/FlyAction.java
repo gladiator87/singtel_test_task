@@ -1,5 +1,8 @@
 package ru.ivanov.singtel.action;
 
-public interface FlyAction {
-    void fly();
+public class FlyAction implements Action {
+    @Override
+    public void doAction() {
+        System.out.println("I am flying");
+    }
 }

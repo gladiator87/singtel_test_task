@@ -1,9 +1,10 @@
 package ru.ivanov.singtel.action;
 
-public interface SayAction {
+public interface SayAction extends Action {
     String getSayWord();
 
-    default void say() {
+    @Override
+    default void doAction() {
         System.out.println(getSayWord());
     }
 }
