@@ -1,6 +1,5 @@
 package ru.ivanov.singtel.fishes;
 
-import ru.ivanov.singtel.SwimAnimal;
 import ru.ivanov.singtel.parameters.Colour;
 import ru.ivanov.singtel.parameters.Size;
 

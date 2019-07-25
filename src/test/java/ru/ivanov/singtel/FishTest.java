@@ -14,7 +14,7 @@ public class FishTest extends BaseTest {
     @Test
     public void testShark() {
         Fish shark = new Shark();
-        shark.swimBehavior.show();
+        shark.getSwimBehavior().show();
         assertEquals("I can swim" + System.lineSeparator(), outStream.toString());
         assertEquals(Colour.GREY, shark.getColour());
         assertEquals(Size.BIG, shark.getSize());
@@ -23,7 +23,7 @@ public class FishTest extends BaseTest {
     @Test
     public void testClownfish() {
         Fish clownfish = new Clownfish();
-        clownfish.swimBehavior.show();
+        clownfish.getSwimBehavior().show();
         assertEquals("I can swim" + System.lineSeparator(), outStream.toString());
         assertEquals(Colour.COLOURFUL, clownfish.getColour());
         assertEquals(Size.SMALL, clownfish.getSize());

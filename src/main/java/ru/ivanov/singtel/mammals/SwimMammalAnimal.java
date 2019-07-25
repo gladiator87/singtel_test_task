@@ -1,12 +1,12 @@
-package ru.ivanov.singtel;
+package ru.ivanov.singtel.mammals;
 
 import ru.ivanov.singtel.behavior.CanSwimBehavior;
 import ru.ivanov.singtel.behavior.SwimBehavior;
 
-public abstract class SwimAnimal implements Animal {
+public abstract class SwimMammalAnimal extends Mammal {
     protected SwimBehavior swimBehavior;
 
-    public SwimAnimal() {
+    public SwimMammalAnimal() {
         this.swimBehavior = new CanSwimBehavior();
     }
 
