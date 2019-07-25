@@ -40,11 +40,11 @@ public abstract class Bird implements Animal {
         swimAction.swim();
     }
 
-    void fly() {
+    public void fly() {
         doAction("flying");
     }
 
-    void sing() {
+    public void sing() {
         doAction("singing");
     }
 }
