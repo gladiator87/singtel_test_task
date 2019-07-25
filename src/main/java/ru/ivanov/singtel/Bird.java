@@ -1,7 +1,11 @@
 package ru.ivanov.singtel;
 
-public class Bird extends Animal {
+public class Bird implements Animal {
     void fly() {
-        System.out.println("I am flying");
+        doAction("flying");
+    }
+
+    void sing() {
+        doAction("singing");
     }
 }
