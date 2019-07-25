@@ -8,7 +8,7 @@ public class BirdTest extends BaseTest {
 
     @Test
     public void singTest() {
-        Bird bird = new Bird();
+        Bird bird = new Duck();
         bird.sing();
         assertEquals("I am singing" + System.lineSeparator(), outStream.toString());
     }

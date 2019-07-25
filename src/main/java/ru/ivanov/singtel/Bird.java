@@ -4,7 +4,10 @@ import ru.ivanov.singtel.action.FlyAction;
 import ru.ivanov.singtel.action.SayAction;
 import ru.ivanov.singtel.action.SwimAction;
 
-public class Bird implements Animal {
+/**
+ * Abstract class Bird to hold base information about any kind of birds
+ */
+public abstract class Bird implements Animal {
     protected FlyAction flyAction;
     protected SwimAction swimAction;
     protected SayAction sayAction;
@@ -37,11 +40,11 @@ public class Bird implements Animal {
         swimAction.swim();
     }
 
-    public void fly() {
+    void fly() {
         doAction("flying");
     }
 
-    public void sing() {
+    void sing() {
         doAction("singing");
     }
 }
