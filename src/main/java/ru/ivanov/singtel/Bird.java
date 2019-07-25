@@ -15,6 +15,12 @@ public abstract class Bird implements Animal {
     public Bird() {
     }
 
+    public Bird(FlyAction flyAction, SwimAction swimAction, SayAction sayAction) {
+        this.flyAction = flyAction;
+        this.swimAction = swimAction;
+        this.sayAction = sayAction;
+    }
+
     public void setFlyAction(FlyAction flyAction) {
         this.flyAction = flyAction;
     }
@@ -23,10 +29,15 @@ public abstract class Bird implements Animal {
         this.swimAction = swimAction;
     }
 
+    @Override
     public void setSayAction(SayAction sayAction) {
         this.sayAction = sayAction;
     }
 
+    @Override
+    public SayAction getSayAction() {
+        return sayAction;
+    }
 
     public void doFly() {
         flyAction.fly();

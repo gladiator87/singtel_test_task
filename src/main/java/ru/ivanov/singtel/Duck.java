@@ -9,10 +9,4 @@ public class Duck extends Bird {
         swimAction =  new CanSwimAction();
         sayAction = new QuackAction();
     }
-
-    public Duck(FlyAction flyAction, SwimAction swimAction, SayAction sayAction) {
-        this.flyAction = flyAction;
-        this.swimAction = swimAction;
-        this.sayAction = sayAction;
-    }
 }
